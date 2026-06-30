@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zepto - Online Grocery Shopping & Delivery</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sticky Header -->
+    <header>
+      <div class="header-top">
+        <div class="logo-section">
+          <a href="index.html" class="logo">zepto</a>
+          <div class="location-picker">
+            Select Location <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+
+        <div class="search-bar-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            class="search-input"
+            placeholder='Search for "chocolate box"'
+          />
+        </div>
+
+        <div class="user-actions">
+          <a href="#" class="header-action-item">
+            <i class="fa-regular fa-circle-user header-action-icon"></i>
+            <span class="header-action-text">Login</span>
+          </a>
+          <a href="#" class="header-action-item">
+            <i class="fa-solid fa-cart-shopping header-action-icon"></i>
+            <span class="header-action-text">Cart</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Category Navigation Tabs -->
+      <div class="sub-nav">
+        <div class="sub-nav-container">
+          <a href="index.html" class="tab-link active"
+            ><i class="fa-solid fa-bag-shopping"></i> All</a
+          >
+          <a href="cafe.html" class="tab-link"
+            ><i class="fa-solid fa-mug-hot"></i> Cafe</a
+          >
+          <a href="#" class="tab-link"
+            ><i class="fa-solid fa-house"></i> Home</a
+          >
+          <a href="#" class="tab-link"
+            ><i class="fa-solid fa-shapes"></i> Toys</a
+          >
+          <a href="#" class="tab-link"
+            ><i class="fa-solid fa-apple-whole"></i> Fresh</a
+          >
+          <a href="#" class="tab-link"
+            ><i class="fa-solid fa-headphones"></i> Electronics</a
+          >
+          <a href="#" class="tab-link"
+            ><i class="fa-solid fa-mobile-screen-button"></i> Mobiles</a
+          >
+          <a href="#" class="tab-link"
+            ><i class="fa-solid fa-spray-can"></i> Beauty</a
+          >
+          <a href="#" class="tab-link"
+            ><i class="fa-solid fa-shirt"></i> Fashion</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-content">
+      <!-- Category Grid Section -->
+      <section class="categories-grid">
+        <a href="#" class="category-card">
+          <div class="category-img-container">
+            <img
+              src="img/1.webp"
+              class="category-img"
+              alt="Fruits & Vegetables"
+            />
+          </div>
+          <span>Fruits & Vegetables</span>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-img-container">
+            <img
+              src="img/2.webp"
+              class="category-img"
+              alt="Dairy, Bread & Eggs"
+            />
+          </div>
+          <span>Dairy, Bread & Eggs</span>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-img-container">
+            <img
+              src="img/3.webp"
+              class="category-img"
+              alt="Atta, Rice, Oil & Dals"
+            />
+          </div>
+          <span>Atta, Rice, Oil & Dals</span>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-img-container">
+            <img
+              src="img/4.webp"
+              class="category-img"
+              alt="Meat, Fish & Eggs"
+            />
+          </div>
+          <span>Meat, Fish & Eggs</span>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-img-container">
+            <img
+              src="img/5.webp"
+              class="category-img"
+              alt="Masala & Dry Fruits"
+            />
+          </div>
+          <span>Masala & Dry Fruits</span>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-img-container">
+            <img
+              src="img/6.webp"
+              class="category-img"
+              alt="Breakfast & Sauces"
+            />
+          </div>
+          <span>Breakfast & Sauces</span>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-img-container">
+            <img src="img/7.webp" class="category-img" alt="Packaged Food" />
+          </div>
+          <span>Packaged Food</span>
+        </a>
+        <a href="cafe.html" class="category-card">
+          <div class="category-img-container">
+            <img src="img/8.webp" class="category-img" alt="Zepto Cafe" />
+          </div>
+          <span>Zepto Cafe</span>
+        </a>
+      </section>
+
+      <!-- Banner Grid Section -->
+      <section class="banners-grid">
+        <!-- Left Banner: ALL NEW ZEPTO EXPERIENCE -->
+        <div class="banner-card banner-left">
+          <h2>All New <span>zepto</span> Experience</h2>
+          <div class="fees-row">
+            <span
+              ><i class="fa-solid fa-circle-check"></i> ₹0 Handling Fee</span
+            >
+            <span
+              ><i class="fa-solid fa-circle-check"></i> ₹0 Delivery Fee*</span
+            >
+            <span
+              ><i class="fa-solid fa-circle-check"></i> ₹0 Rain & Surge
+              Fee</span
+            >
+          </div>
+        </div>
+
+        <!-- Right Banner: Paan Corner -->
+        <div class="banner-card banner-right">
+          <h2>Paan Corner</h2>
+          <p>
+            Get smoking accessories, fresheners & more in Minutes this IPL with
+            Zepto!
+          </p>
+          <a href="#" class="banner-btn">Order now</a>
+        </div>
+      </section>
+
+      <!-- Product Section: Laundry Care -->
+      <section class="product-section">
+        <div class="section-title-row">
+          <h2>Laundry Care</h2>
+          <a href="#" class="see-all-link"
+            >See All <i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+
+        <div class="product-scroll-row">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <span class="bestseller-badge">Bestseller</span>
+            <div class="product-img-container">
+              <img
+                src="img/surf_excel_matic.png"
+                class="product-image"
+                alt="Surf Excel Matic Top Load"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹334</span>
+                <span class="original-price-text">₹355</span>
+              </div>
+              <span class="discount-text">₹21 OFF</span>
+            </div>
+            <div class="title-row">
+              <h4 class="product-title-text">
+                Surf Excel Matic Top Load Detergent Liquid
+              </h4>
+            </div>
+            <span class="product-weight-text">1 pack (2 kg)</span>
+            <span class="tag-badge tag-blue">Stain Removal</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.7 (15.2k)
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="img/rin_matic_pouch.png"
+                class="product-image"
+                alt="Rin Matic Top Load"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹198</span>
+                <span class="original-price-text">₹260</span>
+              </div>
+              <span class="discount-text">₹62 OFF</span>
+            </div>
+            <div class="title-row">
+              <h4 class="product-title-text">
+                Rin Matic Top Load Detergent Liquid | Pouch
+              </h4>
+            </div>
+            <span class="product-weight-text">1 pack (2 kg)</span>
+            <span class="tag-badge tag-blue">Fresh & Fragrant</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.8 (40.3k)
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="img/morelight_powder.png"
+                class="product-image"
+                alt="Morelight Extra Power"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹274</span>
+                <span class="original-price-text">₹540</span>
+              </div>
+              <span class="discount-text">₹266 OFF</span>
+            </div>
+            <div class="title-row">
+              <h4 class="product-title-text">
+                Morelight Extra Power Detergent Powder
+              </h4>
+            </div>
+            <span class="product-weight-text">1 pack (4 kg)</span>
+            <span class="tag-badge tag-blue">Fabric Protect</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.7 (13.8k)
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="img/safewash_liquid.png"
+                class="product-image"
+                alt="SafeWash Top Load Matic"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹198</span>
+                <span class="original-price-text">₹430</span>
+              </div>
+              <span class="discount-text">₹232 OFF</span>
+            </div>
+            <div class="title-row">
+              <h4 class="product-title-text">
+                SafeWash Top Load Matic Premium Detergent Liquid
+              </h4>
+            </div>
+            <span class="product-weight-text">1 pack (2 L or 1.8 L)</span>
+            <span class="tag-badge tag-blue">Colour Protect</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.7 (6.4k)
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="img/ariel_front_load.png"
+                class="product-image"
+                alt="Ariel Power Gel Front"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹650</span>
+                <span class="original-price-text">₹855</span>
+              </div>
+              <span class="discount-text">₹205 OFF</span>
+            </div>
+            <div class="title-row">
+              <h4 class="product-title-text">
+                Ariel Power Gel Liquid Detergent for Front Load
+              </h4>
+            </div>
+            <span class="product-weight-text">1 pack (4 kg)</span>
+            <span class="tag-badge tag-blue">Stain Removal</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.6 (1.6k)
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="img/surf_excel_refill.png"
+                class="product-image"
+                alt="Surf Excel Matic Top Load Refill"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹235</span>
+              </div>
+              <span class="discount-text"></span>
+            </div>
+            <div class="title-row">
+              <h4 class="product-title-text">
+                Surf Excel Matic Top Load Detergent Liquid Refill
+              </h4>
+            </div>
+            <span class="product-weight-text">1 pc (1 L)</span>
+            <span class="tag-badge tag-blue">Stain Removal</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.7 (12.1k)
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Section: Rice -->
+      <section class="product-section">
+        <div class="section-title-row">
+          <h2>Rice</h2>
+          <a href="#" class="see-all-link"
+            >See All <i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+
+        <div class="product-scroll-row">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="img/daily_good_sona_masoori.png"
+                class="product-image"
+                alt="Daily Good Sona Masoori Raw Rice"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹72</span>
+                <span class="original-price-text">₹100</span>
+              </div>
+              <span class="discount-text">₹28 OFF</span>
+            </div>
+            <div class="title-row">
+              <h4 class="product-title-text">
+                Daily Good Sona Masoori Raw Rice
+              </h4>
+            </div>
+            <span class="product-weight-text">1 pack (1 kg)</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.5 (8.2k)
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="img/gts_kolam_rice.png"
+                class="product-image"
+                alt="GTS Original Kolam Rice"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹470</span>
+                <span class="original-price-text">₹625</span>
+              </div>
+              <span class="discount-text">₹155 OFF</span>
+            </div>
+            <div class="title-row">
+              <h4 class="product-title-text">GTS Original Kolam Rice</h4>
+            </div>
+            <span class="product-weight-text">1 pack (5 kg)</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.6 (12.1k)
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="img/daawat_sona_masoori.png"
+                class="product-image"
+                alt="Daawat Sona Masoori Rice"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹80</span>
+                <span class="original-price-text">₹95</span>
+              </div>
+              <span class="discount-text">₹15 OFF</span>
+            </div>
+            <div class="title-row">
+              <h4 class="product-title-text">Daawat Sona Masoori Rice</h4>
+            </div>
+            <span class="product-weight-text">1 pack (1 kg)</span>
+            <span class="tag-badge tag-blue">Sona Masoori Rice</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.5 (9.1k)
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="img/daawat_basmati_rice.png"
+                class="product-image"
+                alt="Daawat Rozana Super Basmati Rice"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹95</span>
+                <span class="original-price-text">₹100</span>
+              </div>
+              <span class="discount-text">₹5 OFF</span>
+            </div>
+            <div class="title-row">
+              <h4 class="product-title-text">
+                Daawat Rozana Super Basmati Rice
+              </h4>
+            </div>
+            <span class="product-weight-text">1 pack (1 kg)</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.6 (4.2k)
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="img/shree_akshara_rice.png"
+                class="product-image"
+                alt="Shree Akshara Premium Steam"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹530</span>
+                <span class="original-price-text">₹750</span>
+              </div>
+              <span class="discount-text">₹220 OFF</span>
+            </div>
+            <div class="title-row">
+              <h4 class="product-title-text">
+                Shree Akshara Premium Steam Sona Masoori Rice
+              </h4>
+            </div>
+            <span class="product-weight-text">1 pack (5 kg)</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.5 (6.8k)
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="img/india_gate_basmati.png"
+                class="product-image"
+                alt="India Gate Dubar Basmati Rice"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹140</span>
+                <span class="original-price-text">₹167</span>
+              </div>
+              <span class="discount-text">₹27 OFF</span>
+            </div>
+            <div class="title-row">
+              <h4 class="product-title-text">
+                India Gate Dubar Basmati Rice | Long Slender
+              </h4>
+            </div>
+            <span class="product-weight-text">1 pack (1 kg)</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.6 (3.4k)
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <span class="footer-logo">zepto</span>
+          <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <p class="footer-info">&copy; Zepto Marketplace Private Limited</p>
+          <p class="footer-info">fssai lic no : 11224999000872</p>
+        </div>
+
+        <div class="footer-links-col">
+          <a href="#">Home</a>
+          <a href="#">Delivery Areas</a>
+          <a href="#">Careers</a>
+          <a href="#">Customer Support</a>
+          <a href="#">Press</a>
+        </div>
+
+        <div class="footer-links-col">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Sell on Zepto</a>
+          <a href="#">Deliver with Zepto</a>
+          <a href="#">Franchise with Zepto</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

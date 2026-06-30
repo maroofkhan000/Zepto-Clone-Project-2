@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zepto Cafe - Delicious Food in Minutes</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sticky Header -->
+    <header>
+      <div class="header-top">
+        <div class="logo-section">
+          <a href="index.html" class="logo">zepto</a>
+          <div class="location-picker">
+            Select Location <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+
+        <div class="search-bar-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            class="search-input"
+            placeholder='Search for "chocolate box"'
+          />
+        </div>
+
+        <div class="user-actions">
+          <a href="#" class="header-action-item">
+            <i class="fa-regular fa-circle-user header-action-icon"></i>
+            <span class="header-action-text">Login</span>
+          </a>
+          <a href="#" class="header-action-item">
+            <i class="fa-solid fa-cart-shopping header-action-icon"></i>
+            <span class="header-action-text">Cart</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Category Navigation Tabs -->
+      <div class="sub-nav">
+        <div class="sub-nav-container">
+          <a href="index.html" class="tab-link"
+            ><i class="fa-solid fa-bag-shopping"></i> All</a
+          >
+          <a href="cafe.html" class="tab-link active"
+            ><i class="fa-solid fa-mug-hot"></i> Cafe</a
+          >
+          <a href="#" class="tab-link"
+            ><i class="fa-solid fa-house"></i> Home</a
+          >
+          <a href="#" class="tab-link"
+            ><i class="fa-solid fa-shapes"></i> Toys</a
+          >
+          <a href="#" class="tab-link"
+            ><i class="fa-solid fa-apple-whole"></i> Fresh</a
+          >
+          <a href="#" class="tab-link"
+            ><i class="fa-solid fa-headphones"></i> Electronics</a
+          >
+          <a href="#" class="tab-link"
+            ><i class="fa-solid fa-mobile-screen-button"></i> Mobiles</a
+          >
+          <a href="#" class="tab-link"
+            ><i class="fa-solid fa-spray-can"></i> Beauty</a
+          >
+          <a href="#" class="tab-link"
+            ><i class="fa-solid fa-shirt"></i> Fashion</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-content">
+      <!-- Cafe Hero Banner Section -->
+      <section class="cafe-hero">
+        <!-- Left floating image: Iced Coffee Glass -->
+        <img
+          src="order/d6d8ff2f-0630-4fd6-a9ca-618b10be761d.webp"
+          class="cafe-hero-left-img"
+          alt="Iced Coffee"
+        />
+
+        <!-- Wavy interior banner card -->
+        <div class="cafe-hero-banner-inner">
+          <h1>Delicious Food<br />in minutes</h1>
+        </div>
+
+        <!-- Right floating image: Chocolate Lava Cake -->
+        <img
+          src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&auto=format&fit=crop"
+          class="cafe-hero-right-img-1"
+          alt="Lava Cake"
+        />
+      </section>
+
+      <!-- Product Section: Cafe Staples (Slide 3) -->
+      <section class="product-section">
+        <div class="section-title-row">
+          <h2>Cafe Staples</h2>
+          <a href="#" class="see-all-link"
+            >See All <i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+
+        <div class="product-scroll-row">
+          <!-- Product 1: Plain Maggi -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=200&auto=format&fit=crop"
+                class="product-image"
+                alt="Plain Maggi"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+                <span class="btn-options-text">4 options</span>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹79</span>
+                <span class="original-price-text">₹99</span>
+              </div>
+              <span class="discount-text">₹20 OFF</span>
+            </div>
+            <div class="title-row">
+              <span class="veg-icon"></span>
+              <h4 class="product-title-text">Plain Maggi</h4>
+            </div>
+            <span class="product-weight-text">250 g</span>
+            <span class="tag-badge tag-teal">Zepto Cafe</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.2 (161.2k)
+            </div>
+          </div>
+
+          <!-- Product 2: Vietnamese Cold Coffee -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="img/iced_coffee.png"
+                class="product-image"
+                alt="Vietnamese Cold Coffee"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹189</span>
+                <span class="original-price-text">₹229</span>
+              </div>
+              <span class="discount-text">₹40 OFF</span>
+            </div>
+            <div class="title-row">
+              <span class="veg-icon"></span>
+              <h4 class="product-title-text">Vietnamese Cold Coffee</h4>
+            </div>
+            <span class="product-weight-text">450 ml</span>
+            <span class="tag-badge tag-teal">Zepto Cafe</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.3 (157.2k)
+            </div>
+          </div>
+
+          <!-- Product 3: Tiramisu -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=200&auto=format&fit=crop"
+                class="product-image"
+                alt="Tiramisu"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹119</span>
+                <span class="original-price-text">₹139</span>
+              </div>
+              <span class="discount-text">₹20 OFF</span>
+            </div>
+            <div class="title-row">
+              <span class="veg-icon"></span>
+              <h4 class="product-title-text">Tiramisu</h4>
+            </div>
+            <span class="product-weight-text">100 g</span>
+            <span class="tag-badge tag-teal">Zepto Cafe</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.2 (138.3k)
+            </div>
+          </div>
+
+          <!-- Product 4: Veg Puff -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=200&auto=format&fit=crop"
+                class="product-image"
+                alt="Veg Puff"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹69</span>
+                <span class="original-price-text">₹109</span>
+              </div>
+              <span class="discount-text">₹40 OFF</span>
+            </div>
+            <div class="title-row">
+              <span class="veg-icon"></span>
+              <h4 class="product-title-text">Veg Puff</h4>
+            </div>
+            <span class="product-weight-text">100 g</span>
+            <span class="tag-badge tag-teal">Zepto Cafe</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.4 (141.8k)
+            </div>
+          </div>
+
+          <!-- Product 5: Veg Burger -->
+          <div class="product-card">
+            <span class="bestseller-badge">Bestseller</span>
+            <div class="product-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=200&auto=format&fit=crop"
+                class="product-image"
+                alt="Veg Burger"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹89</span>
+                <span class="original-price-text">₹139</span>
+              </div>
+              <span class="discount-text">₹50 OFF</span>
+            </div>
+            <div class="title-row">
+              <span class="veg-icon"></span>
+              <h4 class="product-title-text">Veg Burger</h4>
+            </div>
+            <span class="product-weight-text">200 g</span>
+            <span class="tag-badge tag-teal">Zepto Cafe</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.3 (33.7k)
+            </div>
+          </div>
+
+          <!-- Product 6: Buttermilk | Chili Spiced -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="img/buttermilk.png"
+                class="product-image"
+                alt="Buttermilk"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹49</span>
+                <span class="original-price-text">₹89</span>
+              </div>
+              <span class="discount-text">₹40 OFF</span>
+            </div>
+            <div class="title-row">
+              <span class="veg-icon"></span>
+              <h4 class="product-title-text">Buttermilk | Chili Spiced</h4>
+            </div>
+            <span class="product-weight-text">220 ml</span>
+            <span class="tag-badge tag-teal">Zepto Cafe</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.0 (49)
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Section: Freshly Launched Double-Row Scroll (Slide 4) -->
+      <section class="product-section">
+        <div class="section-title-row">
+          <h2>Freshly Launched</h2>
+          <a href="#" class="see-all-link"
+            >See All <i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+
+        <!-- Multi-row Grid Scroll (Rows aligned vertically, scrolling horizontally) -->
+        <div class="product-grid-scroll-row">
+          <!-- COL 1, ROW 1: Cold Filter Coffee -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=200&auto=format&fit=crop"
+                class="product-image"
+                alt="Cold Filter Coffee"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹79</span>
+                <span class="original-price-text">₹149</span>
+              </div>
+              <span class="discount-text">₹70 OFF</span>
+            </div>
+            <div class="title-row">
+              <span class="veg-icon"></span>
+              <h4 class="product-title-text">
+                Cold Filter Coffee | Smooth & Slow Brewed
+              </h4>
+            </div>
+            <span class="product-weight-text">220 ml</span>
+            <span class="tag-badge tag-teal">Zepto Cafe</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 3.1 (113)
+            </div>
+          </div>
+
+          <!-- COL 1, ROW 2: Cold Filter Coffee -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=200&auto=format&fit=crop"
+                class="product-image"
+                alt="Cold Filter Coffee"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹79</span>
+                <span class="original-price-text">₹149</span>
+              </div>
+              <span class="discount-text">₹70 OFF</span>
+            </div>
+            <div class="title-row">
+              <span class="veg-icon"></span>
+              <h4 class="product-title-text">
+                Cold Filter Coffee | Smooth & Slow Brewed
+              </h4>
+            </div>
+            <span class="product-weight-text">220 ml</span>
+            <span class="tag-badge tag-teal">Zepto Cafe</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 3.1 (113)
+            </div>
+          </div>
+
+          <!-- COL 2, ROW 1: Buttermilk | Chilled & Spiced -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=200&auto=format&fit=crop"
+                class="product-image"
+                alt="Buttermilk"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹49</span>
+                <span class="original-price-text">₹89</span>
+              </div>
+              <span class="discount-text">₹40 OFF</span>
+            </div>
+            <div class="title-row">
+              <span class="veg-icon"></span>
+              <h4 class="product-title-text">Buttermilk | Chilled & Spiced</h4>
+            </div>
+            <span class="product-weight-text">220 ml</span>
+            <span class="tag-badge tag-teal">Zepto Cafe</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.0 (49)
+            </div>
+          </div>
+
+          <!-- COL 2, ROW 2: Buttermilk | Chilled & Spiced -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=200&auto=format&fit=crop"
+                class="product-image"
+                alt="Buttermilk"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹49</span>
+                <span class="original-price-text">₹89</span>
+              </div>
+              <span class="discount-text">₹40 OFF</span>
+            </div>
+            <div class="title-row">
+              <span class="veg-icon"></span>
+              <h4 class="product-title-text">Buttermilk | Chilled & Spiced</h4>
+            </div>
+            <span class="product-weight-text">220 ml</span>
+            <span class="tag-badge tag-teal">Zepto Cafe</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.0 (49)
+            </div>
+          </div>
+
+          <!-- COL 3, ROW 1: Mango Jar Cake -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="order/Mango-Jar-Cake-.webp"
+                class="product-image"
+                alt="Mango Jar Cake"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹129</span>
+              </div>
+              <span class="discount-text"></span>
+            </div>
+            <div class="title-row">
+              <span class="veg-icon"></span>
+              <h4 class="product-title-text">Mango Jar Cake</h4>
+            </div>
+            <span class="product-weight-text">100 g</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.2 (984)
+            </div>
+          </div>
+
+          <!-- COL 3, ROW 2: Aam Panna Cooler -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="order/Aam-Panna-Cooler-250-ml.webp"
+                class="product-image"
+                alt="Aam Panna Cooler"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹39</span>
+                <span class="original-price-text">₹59</span>
+              </div>
+              <span class="discount-text">₹20 OFF</span>
+            </div>
+            <div class="title-row">
+              <span class="veg-icon"></span>
+              <h4 class="product-title-text">Aam Panna Cooler</h4>
+            </div>
+            <span class="product-weight-text">250 ml</span>
+            <span class="tag-badge tag-teal">Zepto Cafe</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.3 (1.2k)
+            </div>
+          </div>
+
+          <!-- COL 4, ROW 1: Mango Cheesecake -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=200&auto=format&fit=crop"
+                class="product-image"
+                alt="Mango Cheesecake"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹169</span>
+              </div>
+              <span class="discount-text"></span>
+            </div>
+            <div class="title-row">
+              <span class="veg-icon"></span>
+              <h4 class="product-title-text">Mango Cheesecake (Eggless)</h4>
+            </div>
+            <span class="product-weight-text">125 g</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 3.9 (269)
+            </div>
+          </div>
+
+          <!-- COL 4, ROW 2: Dragon Mango Cooler -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="order/Dragon-Mango-Cooler.webp"
+                class="product-image"
+                alt="Dragon Mango Cooler"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹49</span>
+                <span class="original-price-text">₹69</span>
+              </div>
+              <span class="discount-text">₹20 OFF</span>
+            </div>
+            <div class="title-row">
+              <span class="veg-icon"></span>
+              <h4 class="product-title-text">Dragon Mango Cooler</h4>
+            </div>
+            <span class="product-weight-text">250 ml</span>
+            <span class="tag-badge tag-teal">Zepto Cafe</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.1 (3.1k)
+            </div>
+          </div>
+
+          <!-- COL 5, ROW 2: Tangy Orange Cooler -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="img/tangy_orange_cooler.png"
+                class="product-image"
+                alt="Tangy Orange Cooler"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹39</span>
+                <span class="original-price-text">₹59</span>
+              </div>
+              <span class="discount-text">₹20 OFF</span>
+            </div>
+            <div class="title-row">
+              <span class="veg-icon"></span>
+              <h4 class="product-title-text">Tangy Orange Cooler</h4>
+            </div>
+            <span class="product-weight-text">250 ml</span>
+            <span class="tag-badge tag-teal">Zepto Cafe</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.1 (1.8k)
+            </div>
+          </div>
+
+          <!-- COL 6, ROW 1: Pintola Peanut Butter Shake -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="order/Pintola-Peanut-Butter-Shake-.webp"
+                class="product-image"
+                alt="Peanut Butter Shake"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹79</span>
+                <span class="original-price-text">₹119</span>
+              </div>
+              <span class="discount-text">₹40 OFF</span>
+            </div>
+            <div class="title-row">
+              <span class="veg-icon"></span>
+              <h4 class="product-title-text">Pintola Peanut Butter Shake</h4>
+            </div>
+            <span class="product-weight-text">350 ml</span>
+            <span class="tag-badge tag-teal">Zepto Cafe</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 3.9 (559)
+            </div>
+          </div>
+
+          <!-- COL 7, ROW 1: Bull's-eye Egg -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="order/Bull-s-eye-Egg-2Pcs.webp"
+                class="product-image"
+                alt="Bull's-eye Egg"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹39</span>
+                <span class="original-price-text">₹59</span>
+              </div>
+              <span class="discount-text">₹20 OFF</span>
+            </div>
+            <div class="title-row">
+              <span class="non-veg-icon"></span>
+              <h4 class="product-title-text">Bull's-eye Egg - 2 eggs</h4>
+            </div>
+            <span class="product-weight-text">100 g</span>
+            <span class="tag-badge tag-teal">Zepto Cafe</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.7 (20.9k)
+            </div>
+          </div>
+
+          <!-- COL 7, ROW 2: Ruby Hibiscus Cooler -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img
+                src="https://images.unsplash.com/photo-1497534446932-c925b458314e?w=200&auto=format&fit=crop"
+                class="product-image"
+                alt="Ruby Hibiscus Cooler"
+              />
+              <div class="btn-add-container">
+                <button class="btn-add">ADD</button>
+              </div>
+            </div>
+            <div class="price-area">
+              <div class="price-row">
+                <span class="price-badge">₹99</span>
+              </div>
+              <span class="discount-text"></span>
+            </div>
+            <div class="title-row">
+              <span class="veg-icon"></span>
+              <h4 class="product-title-text">Ruby Hibiscus Cooler</h4>
+            </div>
+            <span class="product-weight-text">450 ml</span>
+            <span class="tag-badge tag-teal">Zepto Cafe</span>
+            <div class="rating-row">
+              <i class="fa-solid fa-star"></i> 4.1 (614)
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <span class="footer-logo">zepto</span>
+          <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <p class="footer-info">&copy; Zepto Marketplace Private Limited</p>
+          <p class="footer-info">fssai lic no : 11224999000872</p>
+        </div>
+
+        <div class="footer-links-col">
+          <a href="#">Home</a>
+          <a href="#">Delivery Areas</a>
+          <a href="#">Careers</a>
+          <a href="#">Customer Support</a>
+          <a href="#">Press</a>
+        </div>
+
+        <div class="footer-links-col">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Sell on Zepto</a>
+          <a href="#">Deliver with Zepto</a>
+          <a href="#">Franchise with Zepto</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
